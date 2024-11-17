@@ -1,0 +1,1538 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ejercicios de Fisioterapia: EDA &#8212; entregatres</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'segundo_punto';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Ejercicio de Fisioterapia: Modelos" href="definitivo.html" />
+    <link rel="prev" title="Modelamiento del Conjunto de Datos: Satisfacción de Clientes" href="Punto1_Modelos_Parcial3%20%281%29.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="entregatres - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="entregatres - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Parcial 3
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Punto1EDA_Parcial3.html">Problema de clasificación</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Punto1_Modelos_Parcial3%20%281%29.html">Modelamiento del Conjunto de Datos: Satisfacción de Clientes</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ejercicios de Fisioterapia: EDA</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="definitivo.html">Ejercicio de Fisioterapia: Modelos</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsegundo_punto.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/segundo_punto.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicios de Fisioterapia: EDA</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicios de Fisioterapia: EDA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#librerias">Librerias</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-datos">Cargar Datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio">Análisis exploratorio</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-focalizado-por-unidad-1">Análisis focalizado por unidad 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 1 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 2 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 3 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 4 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 5 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 6 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 7 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 8 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-general">Conclusión general</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-distribucion-y-dispersion">Análisis de distribución y dispersión</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-1">Unidad 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-2">Unidad 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-3">Unidad 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-4">Unidad 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-5">Unidad 5</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ejercicios-de-fisioterapia-eda">
+<h1>Ejercicios de Fisioterapia: EDA<a class="headerlink" href="#ejercicios-de-fisioterapia-eda" title="Link to this heading">#</a></h1>
+<p>Este conjunto de datos contiene información de sensores inerciales y magnéticos portátiles durante la ejecución de ejercicios de fisioterapia.</p>
+<p>Se incluyen ocho tipos de ejercicios, cada uno con tres formas de ejecución (correcta, rápida y de baja amplitud). Cada tipo de ejecución de cada ejercicio fue realizado varias veces por cinco sujetos. Los sujetos utilizaron cinco unidades de sensores MTx fabricadas por XSens.</p>
+<p>• s1, …, s5: Sujetos 1–5</p>
+<p>• e1, …, e8: Tipos de ejercicios 1–8</p>
+<p>• u1, …, u5: Unidades de sensores 1–5</p>
+<p>Cada unidad contiene tres sensores triaxiales: un acelerómetro, un giroscopio y un magnetómetro, muestreados a 25 Hz</p>
+<p><strong>Los Sujetos</strong>: Son las personas que realizan los ejercicios.</p>
+<p><strong>Los ejercicios</strong>: Cada tipo de ejercicio representa un movimiento o actividad diferente.</p>
+<p><strong>Las unidades</strong>: Son los diferentes dispositivos sensores (MTx sensor units) utilizados.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="librerias">
+<h1>Librerias<a class="headerlink" href="#librerias" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cargar-datos">
+<h1>Cargar Datos<a class="headerlink" href="#cargar-datos" title="Link to this heading">#</a></h1>
+<p>Para cargar los datos y usa un ciclo que recorre todas las combinaciones posibles de sujetos, ejercicios y unidades de sensor, buscando archivos específicos archivos de entrenamiento (template_session.txt) y los de prueba (test.txt)   en cada ruta correspondiente.</p>
+<p>Cada archivo encontrado se almacena como un DataFrame de pandas dentro de un diccionario, con claves que identifican cada combinación de sujeto, ejercicio y unidad (por ejemplo, es1e1u1 para archivos de entrenamiento). Esto facilita el acceso directo y rápido a cualquier archivo de datos, optimizando el proceso para manejar el gran volumen de archivos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">directorio_principal</span> <span class="o">=</span> <span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">KELLY</span><span class="se">\\</span><span class="s2">Downloads</span><span class="se">\\</span><span class="s2">fisioterapia_dataset_regresion&quot;</span>
+
+<span class="k">def</span> <span class="nf">cargar_datos_entrenamiento_prueba</span><span class="p">(</span><span class="n">directorio</span><span class="p">):</span>
+    <span class="n">datos_entrenamiento</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">datos_prueba</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">sujeto</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>  <span class="c1"># s1, s2, ..., s5</span>
+        <span class="k">for</span> <span class="n">ejercicio</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>  <span class="c1"># e1, e2, ..., e8</span>
+            <span class="k">for</span> <span class="n">unidad</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>  <span class="c1"># u1, u2, ..., u5</span>
+                <span class="n">ruta_entrenamiento</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directorio</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;s</span><span class="si">{</span><span class="n">sujeto</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;e</span><span class="si">{</span><span class="n">ejercicio</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;u</span><span class="si">{</span><span class="n">unidad</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;template_session.txt&quot;</span><span class="p">)</span>
+                <span class="n">ruta_prueba</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directorio</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;s</span><span class="si">{</span><span class="n">sujeto</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;e</span><span class="si">{</span><span class="n">ejercicio</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;u</span><span class="si">{</span><span class="n">unidad</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;test.txt&quot;</span><span class="p">)</span>
+           
+                <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ruta_entrenamiento</span><span class="p">):</span>
+                    <span class="n">df_entrenamiento</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ruta_entrenamiento</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+                    <span class="n">clave_entrenamiento</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;es</span><span class="si">{</span><span class="n">sujeto</span><span class="si">}</span><span class="s2">e</span><span class="si">{</span><span class="n">ejercicio</span><span class="si">}</span><span class="s2">u</span><span class="si">{</span><span class="n">unidad</span><span class="si">}</span><span class="s2">&quot;</span>  <span class="c1"># Clave</span>
+                    <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="n">clave_entrenamiento</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_entrenamiento</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Archivo de entrenamiento no encontrado en: </span><span class="si">{</span><span class="n">ruta_entrenamiento</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                
+                <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ruta_prueba</span><span class="p">):</span>
+                    <span class="n">df_prueba</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ruta_prueba</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+                    <span class="n">clave_prueba</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;ts</span><span class="si">{</span><span class="n">sujeto</span><span class="si">}</span><span class="s2">e</span><span class="si">{</span><span class="n">ejercicio</span><span class="si">}</span><span class="s2">u</span><span class="si">{</span><span class="n">unidad</span><span class="si">}</span><span class="s2">&quot;</span>  <span class="c1"># Clave</span>
+                    <span class="n">datos_prueba</span><span class="p">[</span><span class="n">clave_prueba</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_prueba</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Archivo de prueba no encontrado en: </span><span class="si">{</span><span class="n">ruta_prueba</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">datos_prueba</span>
+
+<span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">datos_prueba</span> <span class="o">=</span> <span class="n">cargar_datos_entrenamiento_prueba</span><span class="p">(</span><span class="n">directorio_principal</span><span class="p">)</span>
+
+<span class="c1"># Mensajes de comprobación final</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cantidad de DataFrames de Entrenamiento: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cantidad de DataFrames de Prueba: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">datos_prueba</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar un ejemplo de un DataFrame cargado</span>
+<span class="c1">#print(datos_entrenamiento.get(&#39;es1e1u1&#39;))  # Ejemplo de cómo acceder a un DataFrame específico</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cantidad de DataFrames de Entrenamiento: 200
+Cantidad de DataFrames de Prueba: 200
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se logró cargar 200 archivos de entrenamiento y de prueba, almacenados en los diccionarios datos_entrenamiento y datos_prueba</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datos_entrenamiento</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;es1e1u1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>time index</th>
+      <th>acc_x</th>
+      <th>acc_y</th>
+      <th>acc_z</th>
+      <th>gyr_x</th>
+      <th>gyr_y</th>
+      <th>gyr_z</th>
+      <th>mag_x</th>
+      <th>mag_y</th>
+      <th>mag_z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>-9.665799</td>
+      <td>-1.677241</td>
+      <td>0.615063</td>
+      <td>-0.014956</td>
+      <td>0.004388</td>
+      <td>0.010589</td>
+      <td>0.587318</td>
+      <td>0.455106</td>
+      <td>-0.094949</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>-9.665806</td>
+      <td>-1.684737</td>
+      <td>0.622513</td>
+      <td>0.000607</td>
+      <td>-0.003094</td>
+      <td>-0.007589</td>
+      <td>0.587428</td>
+      <td>0.455621</td>
+      <td>-0.093364</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>-9.628410</td>
+      <td>-1.699724</td>
+      <td>0.585751</td>
+      <td>0.006007</td>
+      <td>0.000557</td>
+      <td>-0.004879</td>
+      <td>0.588389</td>
+      <td>0.454722</td>
+      <td>-0.094907</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>-9.628372</td>
+      <td>-1.684836</td>
+      <td>0.600733</td>
+      <td>-0.003085</td>
+      <td>-0.000281</td>
+      <td>-0.000340</td>
+      <td>0.588673</td>
+      <td>0.455759</td>
+      <td>-0.092664</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>-9.643291</td>
+      <td>-1.639893</td>
+      <td>0.585661</td>
+      <td>-0.002932</td>
+      <td>-0.006807</td>
+      <td>-0.013043</td>
+      <td>0.589193</td>
+      <td>0.453927</td>
+      <td>-0.093143</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datos_prueba</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ts1e1u1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>time index</th>
+      <th>acc_x</th>
+      <th>acc_y</th>
+      <th>acc_z</th>
+      <th>gyr_x</th>
+      <th>gyr_y</th>
+      <th>gyr_z</th>
+      <th>mag_x</th>
+      <th>mag_y</th>
+      <th>mag_z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>-9.685645</td>
+      <td>-1.645149</td>
+      <td>0.505022</td>
+      <td>-0.020696</td>
+      <td>0.009202</td>
+      <td>-0.008566</td>
+      <td>0.589728</td>
+      <td>0.453403</td>
+      <td>-0.075234</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>-9.648184</td>
+      <td>-1.645353</td>
+      <td>0.513125</td>
+      <td>-0.008165</td>
+      <td>-0.001407</td>
+      <td>-0.003256</td>
+      <td>0.587024</td>
+      <td>0.453644</td>
+      <td>-0.075593</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>-9.700570</td>
+      <td>-1.615223</td>
+      <td>0.512321</td>
+      <td>-0.004447</td>
+      <td>0.011059</td>
+      <td>-0.008589</td>
+      <td>0.589691</td>
+      <td>0.454598</td>
+      <td>-0.075525</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>-9.685627</td>
+      <td>-1.630183</td>
+      <td>0.497591</td>
+      <td>-0.026110</td>
+      <td>0.009183</td>
+      <td>-0.008554</td>
+      <td>0.589240</td>
+      <td>0.452864</td>
+      <td>-0.074705</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>-9.655697</td>
+      <td>-1.630194</td>
+      <td>0.460742</td>
+      <td>-0.008109</td>
+      <td>0.001231</td>
+      <td>-0.005950</td>
+      <td>0.589647</td>
+      <td>0.452882</td>
+      <td>-0.076429</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio">
+<h1>Análisis exploratorio<a class="headerlink" href="#analisis-exploratorio" title="Link to this heading">#</a></h1>
+<p>Se realiza un código para graficar las distribuciones de densidad de las mediciones y otro para visualizar cada tipo de sensor en función del tiempo.Los tres tipos de sensores son: acelerómetro, giroscopio y magnetómetro, representados por las variables acc_x, gyr_x, y mag_x en sus respectivas componentes (x, y, z).</p>
+<p>En este análisis exploratorio de datos (EDA), se aborda el comportamiento de las mediciones obtenidas durante la ejecución de ejercicios físicos por parte de diferentes sujetos. Aunque idealmente se podrían analizar todas las combinaciones de sujetos, ejercicios y unidades disponibles en el dataset, hacerlo sería demasiado extenso y poco práctico debido al alto volumen de datos. Por lo tanto, para mantener el enfoque y la claridad en el análisis, se decidió focalizar en un subconjunto representativo de los datos.</p>
+<section id="analisis-focalizado-por-unidad-1">
+<h2>Análisis focalizado por unidad 1<a class="headerlink" href="#analisis-focalizado-por-unidad-1" title="Link to this heading">#</a></h2>
+<p>Para este análisis se van a comparar los distintos ejercicios por la unidad 1 (u1), con el fin de estudiar cómo responde una única parte del cuerpo (correspondiente a esta unidad) ante la ejecución de diversas actividades. La elección de la unidad 1 como ejemplo permite focalizar el análisis inicial en una región específica, lo cual facilita la exploración preliminar sin abarcar la totalidad de las unidades.</p>
+<p>Específicamente, se seleccionó una unidad sensora específica (<code class="docutils literal notranslate"><span class="pre">u1</span></code>) y se compararon las mediciones de los sensores (<code class="docutils literal notranslate"><span class="pre">aceleración</span></code>, <code class="docutils literal notranslate"><span class="pre">giroscopio</span></code>, y <code class="docutils literal notranslate"><span class="pre">magnetómetro</span></code>) entre diferentes sujetos durante la realización de los ejercicios. Este enfoque permite identificar patrones y variaciones interpersonales en las mediciones, sin perder profundidad analítica ni sobrecargar la visualización.</p>
+<section id="ejercicio-1-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 1 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-1-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<p>Estos gráficos muestran las distribuciones de los datos provenientes de los sensores (acelerómetro, giroscopio y magnetómetro) para el Ejercicio 1 realizado por los 5 sujetos con la Unidad 1.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e1u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e1u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e1u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e1u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e1u1&#39;</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">column_type</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">column_type</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Densidades para acc_x, acc_y, acc_z</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;acc_x&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_y&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;acc_y&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_z&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;acc_z&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1"> de acc_x, acc_y, acc_z&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">column_type</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># Densidades para gyr_x, gyr_y, gyr_z</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;gyr_x&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_y&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;gyr_y&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_z&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;gyr_z&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1"> de gyr_x, gyr_y, gyr_z&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">column_type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="c1"># Densidades para mag_x, mag_y, mag_z</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;mag_x&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_y&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;mag_y&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_z&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;mag_z&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1"> de mag_x, mag_y, mag_z&#39;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Valor&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Densidad&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+  
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 1- Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8d6efd031356519a70b8ae85e3906f0f971ca70d8764db7169402d8426ac85f8.png" src="_images/8d6efd031356519a70b8ae85e3906f0f971ca70d8764db7169402d8426ac85f8.png" />
+</div>
+</div>
+<p>En este análisis, se observaron las distribuciones de las mediciones de los sensores para el Ejercicio 1 en la Unidad 1, comparando entre sujetos. Las mediciones del acelerómetro (<code class="docutils literal notranslate"><span class="pre">acc_x</span></code>, <code class="docutils literal notranslate"><span class="pre">acc_y</span></code>, <code class="docutils literal notranslate"><span class="pre">acc_z</span></code>) mostraron una variabilidad notable, mientras que los sujetos 4 y 5 presentaron distribuciones más concentradas, sugiriendo mayor consistencia en su ejecución. Las mediciones del giroscopio (<code class="docutils literal notranslate"><span class="pre">gyr_x</span></code>, <code class="docutils literal notranslate"><span class="pre">gyr_y</span></code>, <code class="docutils literal notranslate"><span class="pre">gyr_z</span></code>) fueron más homogéneas entre los participantes, reflejando patrones rotacionales similares en el movimiento. En contraste, el magnetómetro (<code class="docutils literal notranslate"><span class="pre">mag_x</span></code>, <code class="docutils literal notranslate"><span class="pre">mag_y</span></code>, <code class="docutils literal notranslate"><span class="pre">mag_z</span></code>) mostró una alta sensibilidad a las diferencias individuales, probablemente asociadas con la orientación del sensor o la técnica del ejercicio. Estos hallazgos subrayan la importancia de ajustar y calibrar los sensores para mejorar la uniformidad de las mediciones y permiten identificar sujetos con ejecuciones más precisas o variables, información valiosa para evaluar el progreso en fisioterapia.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">column_type</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Función para trazar las densidades de acc, gyr y mag según el tipo de columna.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">column_type</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Densidades para acc_x, acc_y, acc_z</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_x&#39;</span><span class="p">],</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;acc_x&#39;</span><span class="p">)</span>  <span class="c1"># Línea azul continua para acc_x</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_y&#39;</span><span class="p">],</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;acc_y&#39;</span><span class="p">)</span> <span class="c1"># Línea roja discontinua para acc_y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_z&#39;</span><span class="p">],</span> <span class="s1">&#39;g-.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;acc_z&#39;</span><span class="p">)</span> <span class="c1"># Línea verde punteada y discontinua para acc_z</span>
+
+        <span class="c1"># Añadir marcadores en puntos específicos (por ejemplo, cada 5 segundos)</span>
+        <span class="n">marker_indices</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">]</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>  <span class="c1"># Selecciona cada 5 segundos</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_x&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">)</span>  <span class="c1"># Marcador azul para acc_x</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_y&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>  <span class="c1"># Marcador rojo para acc_y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;acc_z&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;go&#39;</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Acceleration (m/s²)&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">column_type</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># Densidades para gyr_x, gyr_y, gyr_z</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_x&#39;</span><span class="p">],</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;gyr_x&#39;</span><span class="p">)</span>  <span class="c1"># Línea azul continua para acc_x</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_y&#39;</span><span class="p">],</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;gyr_y&#39;</span><span class="p">)</span> <span class="c1"># Línea roja discontinua para acc_y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_z&#39;</span><span class="p">],</span> <span class="s1">&#39;g-.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;gyr_z&#39;</span><span class="p">)</span> <span class="c1"># Línea verde punteada y discontinua para acc_z</span>
+
+        <span class="c1"># Añadir marcadores en puntos específicos (por ejemplo, cada 5 segundos)</span>
+        <span class="n">marker_indices</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">]</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>  <span class="c1"># Selecciona cada 5 segundos</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_x&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">)</span>  <span class="c1"># Marcador azul para acc_x</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_y&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>  <span class="c1"># Marcador rojo para acc_y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;gyr_z&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;go&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Angular rate (rad/s)&#39;</span><span class="p">)</span>
+        
+
+    <span class="k">elif</span> <span class="n">column_type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="c1"># Densidades para mag_x, mag_y, mag_z</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_x&#39;</span><span class="p">],</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;mag_x&#39;</span><span class="p">)</span>  <span class="c1"># Línea azul continua para acc_x</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_y&#39;</span><span class="p">],</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;mag_y&#39;</span><span class="p">)</span> <span class="c1"># Línea roja discontinua para acc_y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_z&#39;</span><span class="p">],</span> <span class="s1">&#39;g-.&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;mag_z&#39;</span><span class="p">)</span> <span class="c1"># Línea verde punteada y discontinua para acc_z</span>
+
+        <span class="c1"># Añadir marcadores en puntos específicos (por ejemplo, cada 5 segundos)</span>
+        <span class="n">marker_indices</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">]</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>  <span class="c1"># Selecciona cada 5 segundos</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_x&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">)</span>  <span class="c1"># Marcador azul para acc_x</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_y&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>  <span class="c1"># Marcador rojo para acc_y</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time index&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_z&#39;</span><span class="p">][</span><span class="n">marker_indices</span><span class="p">],</span> <span class="s1">&#39;go&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnetic field (relative)&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Crear el gráfico con subgráficos</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 1 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/4a20be140b0ab5313f311c2ce8e8ae481dcb39cd8027499cb08775ba98651633.png" src="_images/4a20be140b0ab5313f311c2ce8e8ae481dcb39cd8027499cb08775ba98651633.png" />
+</div>
+</div>
+<p>El acelerómetro mostró patrones estables y repetitivos en general, aunque el Sujeto 5 presentó mayor variabilidad en <code class="docutils literal notranslate"><span class="pre">acc_z</span></code>, posiblemente relacionada con menor estabilidad en la ejecución, mientras que el Sujeto 1 mostró un control más consistente. El giroscopio, más sensible a las diferencias individuales, reveló que los Sujetos 3 y 4 tuvieron picos pronunciados, lo que indica movimientos más amplios o menos controlados, mientras que el Sujeto 2 mostró mayor estabilidad. El magnetómetro reflejó mayor variabilidad en los Sujetos 2 y 3, posiblemente debido a fluctuaciones en la orientación o postura, en contraste con los Sujetos 1 y 5, cuyos patrones fueron más planos y uniformes.</p>
+</section>
+<section id="ejercicio-2-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 2 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-2-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<p>Ahora estos gráficos muestran las distribuciones de los datos provenientes de los sensores (acelerómetro, giroscopio y magnetómetro) para el Ejercicio 2 realizado por los 5 sujetos con la Unidad 1.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e2u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e2u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e2u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e2u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e2u1&#39;</span><span class="p">]</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 2- Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d64f19499f0f5c2d81dd819376f2d0935814dd68650bc2582f6d1adf82b3c071.png" src="_images/d64f19499f0f5c2d81dd819376f2d0935814dd68650bc2582f6d1adf82b3c071.png" />
+</div>
+</div>
+<p>Se observaron patrones generales consistentes en las mediciones del acelerómetro y el giroscopio entre los cinco sujetos, lo que sugiere que el ejercicio implica movimientos repetitivos y controlados. Sin embargo, se identificaron diferencias individuales, como en el Sujeto 2, que mostró mayor dispersión en <code class="docutils literal notranslate"><span class="pre">acc_y</span></code> y en los ejes del magnetómetro, reflejando variabilidad en la técnica o posibles desviaciones posturales. El Sujeto 5 presentó mayor amplitud en <code class="docutils literal notranslate"><span class="pre">acc_z</span></code> y <code class="docutils literal notranslate"><span class="pre">mag_z</span></code>, lo que podría estar asociado con movimientos más amplios en el eje vertical o fluctuaciones en el campo magnético. Por otro lado, el giroscopio evidenció patrones rotacionales similares entre sujetos, indicando movimientos controlados en este aspecto.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 2 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/32ed5354580c3afce3c88cf8aa607904257a058098d11da4eeb2810decd1cda9.png" src="_images/32ed5354580c3afce3c88cf8aa607904257a058098d11da4eeb2810decd1cda9.png" />
+</div>
+</div>
+<p>El acelerómetro mostró patrones consistentes entre los sujetos, con valores relativamente estables y repetitivos en los ejes <code class="docutils literal notranslate"><span class="pre">acc_x</span></code>, <code class="docutils literal notranslate"><span class="pre">acc_y</span></code> y <code class="docutils literal notranslate"><span class="pre">acc_z</span></code>, aunque el Sujeto 2 presentó mayor variabilidad en <code class="docutils literal notranslate"><span class="pre">acc_y</span></code>, posiblemente reflejando movimientos laterales menos controlados. En el giroscopio, las mediciones evidenciaron mayor sensibilidad a las diferencias individuales, con el Sujeto 4 mostrando mayor dispersión en <code class="docutils literal notranslate"><span class="pre">gyr_x</span></code> y <code class="docutils literal notranslate"><span class="pre">gyr_z</span></code>, lo que sugiere movimientos rotacionales más amplios o inestables. El magnetómetro presentó variaciones notables entre sujetos, especialmente en <code class="docutils literal notranslate"><span class="pre">mag_y</span></code> y <code class="docutils literal notranslate"><span class="pre">mag_z</span></code>, donde el Sujeto 2 mostró fluctuaciones más amplias, lo que podría indicar cambios en la orientación del sensor o inestabilidad postural.</p>
+</section>
+<section id="ejercicio-3-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 3 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-3-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e3u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e3u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e3u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e3u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e3u1&#39;</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 3- Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/e4273245d8f90270a10687b031c853e0c5b9d0c018797481ae550b5c72eff8f1.png" src="_images/e4273245d8f90270a10687b031c853e0c5b9d0c018797481ae550b5c72eff8f1.png" />
+</div>
+</div>
+<p>En los histogramas de densidad para el Ejercicio 3, se observa que las distribuciones del acelerómetro (acc_x, acc_y, acc_z) son consistentes entre los sujetos en términos de rangos, aunque presentan algunas diferencias en la forma. En particular, el eje acc_y del Sujeto 2 muestra una mayor dispersión, lo que podría indicar un menor control lateral en el movimiento. Asimismo, el Sujeto 5 tiene distribuciones más amplias en acc_z, lo que sugiere mayor variabilidad en el eje vertical. Por su parte, el giroscopio (gyr_x, gyr_y, gyr_z) presenta patrones altamente concentrados en todos los sujetos, lo que indica movimientos rotacionales controlados y consistentes. El magnetómetro, sin embargo, refleja mayor variabilidad, especialmente en mag_x y mag_y, con el Sujeto 2 mostrando picos más amplios y dispersos, posiblemente debido a fluctuaciones en la orientación o técnica.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 3 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/76e51ccae5c8f11cebc63c691b06c35b2ea0a0faa8d6d7328acdcc12dcf9bb33.png" src="_images/76e51ccae5c8f11cebc63c691b06c35b2ea0a0faa8d6d7328acdcc12dcf9bb33.png" />
+</div>
+</div>
+<p>En las series de tiempo, el acelerómetro evidencia patrones repetitivos y estables en la mayoría de los sujetos, con ligeras variaciones en la magnitud de los ejes. Los Sujetos 2 y 5 muestran fluctuaciones más marcadas en acc_y y acc_z, respectivamente, lo que podría reflejar inestabilidad o técnica menos precisa. En el caso del giroscopio, las variaciones angulares son más pronunciadas en el Sujeto 4, especialmente en gyr_x y gyr_z, indicando movimientos rotacionales más amplios o menos controlados. Por otro lado, el magnetómetro muestra patrones estables en los Sujetos 1 y 3, mientras que los Sujetos 2 y 5 presentan mayor variabilidad en los tres ejes, lo que podría estar relacionado con cambios en la postura o desajustes en la colocación del sensor.</p>
+</section>
+<section id="ejercicio-4-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 4 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-4-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e4u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e4u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e4u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e4u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e4u1&#39;</span><span class="p">]</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 4 - Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d90b50da5cda9c261675b4e858512d71ec6ec62ca28e0734e62615c9e3c2088c.png" src="_images/d90b50da5cda9c261675b4e858512d71ec6ec62ca28e0734e62615c9e3c2088c.png" />
+</div>
+</div>
+<p>Revelan patrones consistentes en el acelerómetro (acc_x, acc_y, acc_z) entre los sujetos, con picos bien definidos y rangos similares. Sin embargo, el Sujeto 2 muestra una mayor dispersión en acc_y, lo que podría indicar movimientos laterales menos controlados, mientras que el Sujeto 5 tiene una variabilidad notable en acc_z, sugiriendo fluctuaciones en el eje vertical. Las mediciones del giroscopio (gyr_x, gyr_y, gyr_z) presentan distribuciones estrechas y consistentes en todos los sujetos, reflejando movimientos rotacionales controlados. Por otro lado, el magnetómetro muestra mayor variabilidad, con diferencias significativas entre sujetos en mag_x y mag_y, particularmente en el Sujeto 2, que presenta distribuciones más amplias, lo que podría estar relacionado con fluctuaciones posturales o desajustes en la orientación del sensor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 4 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/352b0e7f68a8e81b1fbe18b45b016983fb81306f6673a33760793244113a970a.png" src="_images/352b0e7f68a8e81b1fbe18b45b016983fb81306f6673a33760793244113a970a.png" />
+</div>
+</div>
+<p>En las series de tiempo, el acelerómetro muestra patrones repetitivos y estables en la mayoría de los sujetos. Sin embargo, el Sujeto 5 presenta mayores oscilaciones en acc_y y acc_z, lo que podría reflejar variabilidad en la técnica o menor control del movimiento. Las mediciones del giroscopio son más sensibles a las diferencias individuales, con el Sujeto 4 mostrando picos más pronunciados en gyr_z, lo que sugiere rotaciones menos controladas. Por su parte, el magnetómetro evidencia patrones estables en el Sujeto 1, mientras que los Sujetos 2 y 5 muestran mayor dispersión, lo que podría reflejar cambios posturales o una colocación subóptima del sensor.</p>
+</section>
+<section id="ejercicio-5-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 5 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-5-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e5u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e5u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e5u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e5u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e5u1&#39;</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 4 - Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/7b1cccc045219a23a764f8880156cb7b929f8ea2ee4558bf7b02d353e80830c1.png" src="_images/7b1cccc045219a23a764f8880156cb7b929f8ea2ee4558bf7b02d353e80830c1.png" />
+</div>
+</div>
+<p>Los histogramas de densidad muestran patrones consistentes en el acelerómetro (acc_x, acc_y, acc_z) entre los sujetos, con distribuciones estrechas y bien definidas en la mayoría de los casos. Sin embargo, el Sujeto 2 presenta una mayor dispersión en acc_y, lo que podría estar relacionado con variaciones en movimientos laterales, y el Sujeto 3 muestra una dispersión más amplia en acc_z, lo que puede reflejar variabilidad en la amplitud de los movimientos verticales. En el giroscopio (gyr_x, gyr_y, gyr_z), las distribuciones son estrechas y bastante uniformes entre los sujetos, indicando que los movimientos rotacionales son consistentes. Por otro lado, las mediciones del magnetómetro reflejan una mayor variabilidad, especialmente en los Sujetos 2 y 3, con picos menos definidos en mag_x y mag_z, lo que sugiere fluctuaciones en la orientación del sensor o inestabilidad postural.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 5 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a09d0bb944a638a3e2d517a5635aeca9f03ab92fefc40109ed7e913cb17986f0.png" src="_images/a09d0bb944a638a3e2d517a5635aeca9f03ab92fefc40109ed7e913cb17986f0.png" />
+</div>
+</div>
+<p>El acelerómetro evidencia patrones repetitivos y estables en general, con algunos picos y oscilaciones en los ejes acc_y y acc_z para los Sujetos 2 y 3, respectivamente, lo que podría reflejar técnica inconsistente o movimientos menos controlados. En el giroscopio, los Sujetos 4 y 5 presentan picos más pronunciados en gyr_x y gyr_z, lo que sugiere rotaciones más amplias o descontroladas durante el ejercicio. En el magnetómetro, los Sujetos 2 y 3 muestran mayores fluctuaciones en mag_y y mag_z, lo que podría estar relacionado con ajustes en la postura o desalineaciones del sensor durante el movimiento.</p>
+</section>
+<section id="ejercicio-6-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 6 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-6-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e6u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e6u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e6u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e6u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e6u1&#39;</span><span class="p">]</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 6 - Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f9d77d35baf24d45a97e967ec545c2b337aaa048de3f6ab838c43bb25fe3288f.png" src="_images/f9d77d35baf24d45a97e967ec545c2b337aaa048de3f6ab838c43bb25fe3288f.png" />
+</div>
+</div>
+<p>En las distribuciones del acelerómetro (acc_x, acc_y, acc_z), los histogramas muestran patrones consistentes y bien definidos entre los sujetos, con picos estrechos y rangos limitados, lo que sugiere movimientos controlados y repetitivos. Sin embargo, el Sujeto 3 presenta una mayor dispersión en acc_y, lo que podría reflejar variabilidad en movimientos laterales. El giroscopio (gyr_x, gyr_y, gyr_z) tiene distribuciones estrechas y similares entre los sujetos, aunque el Sujeto 3 muestra ligeras variaciones en los tres ejes, lo que sugiere movimientos rotacionales algo menos consistentes. En el magnetómetro (mag_x, mag_y, mag_z), los Sujetos 1 y 2 presentan patrones estables, mientras que los Sujetos 3 y 5 muestran una mayor variabilidad en los ejes mag_y y mag_z, lo que podría estar asociado con fluctuaciones posturales o desajustes en el sensor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 6 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1a80baaf8a2b35d13672d21269c4f6afadebf3d8d8e3a44308514571713af431.png" src="_images/1a80baaf8a2b35d13672d21269c4f6afadebf3d8d8e3a44308514571713af431.png" />
+</div>
+</div>
+<p>En las series de tiempo, las mediciones del acelerómetro muestran movimientos repetitivos y consistentes para la mayoría de los sujetos, con oscilaciones mínimas en los ejes. Sin embargo, el Sujeto 3 tiene mayores fluctuaciones en acc_y, lo que podría reflejar técnica inconsistente en ese eje. El giroscopio muestra mayor sensibilidad a las diferencias individuales, con picos pronunciados y más variabilidad en los ejes gyr_x y gyr_z para los Sujetos 3 y 5, lo que indica movimientos rotacionales más amplios o menos controlados. En el magnetómetro, los Sujetos 3 y 5 presentan cambios significativos en los ejes mag_y y mag_z, lo que podría reflejar cambios posturales o desalineaciones del sensor.</p>
+</section>
+<section id="ejercicio-7-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 7 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-7-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e7u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e7u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e7u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e7u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e7u1&#39;</span><span class="p">]</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 7 - Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9f6a748541508bc1964a3ea8ecc7ca755631ca5e4e68c69667f6bdfb2f178dce.png" src="_images/9f6a748541508bc1964a3ea8ecc7ca755631ca5e4e68c69667f6bdfb2f178dce.png" />
+</div>
+</div>
+<p>Los histogramas del acelerómetro (acc_x, acc_y, acc_z) muestran patrones consistentes entre los sujetos, con distribuciones estrechas que reflejan movimientos controlados y repetitivos. Sin embargo, el Sujeto 2 presenta dispersión más amplia en acc_y, lo que podría reflejar variabilidad en movimientos laterales, y el Sujeto 5 muestra ligeras fluctuaciones en acc_z, indicando posibles diferencias en la amplitud de los movimientos verticales. En el giroscopio (gyr_x, gyr_y, gyr_z), las distribuciones son uniformes y bien concentradas entre los sujetos, aunque el Sujeto 3 presenta leves picos en gyr_x y gyr_z, lo que sugiere movimientos rotacionales menos precisos. Por su parte, las mediciones del magnetómetro (mag_x, mag_y, mag_z) presentan estabilidad en los Sujetos 1 y 4, mientras que los Sujetos 2 y 5 muestran mayor dispersión en mag_y y mag_z, posiblemente asociada con fluctuaciones posturales o desalineación del sensor.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 7 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/135e4b8b7b1e62bc900b75a8a3c8c4799a9f2f2287492ff5a029cea128eb79b4.png" src="_images/135e4b8b7b1e62bc900b75a8a3c8c4799a9f2f2287492ff5a029cea128eb79b4.png" />
+</div>
+</div>
+<p>El acelerómetro evidencia movimientos repetitivos y consistentes, aunque el Sujeto 2 muestra oscilaciones más amplias en acc_y, reflejando variabilidad lateral en su ejecución. El Sujeto 3 tiene fluctuaciones visibles en acc_z, lo que podría reflejar mayor amplitud en los movimientos verticales. El giroscopio es más sensible a las diferencias individuales, con los Sujetos 3 y 5 mostrando picos más pronunciados en gyr_x y gyr_z, lo que indica movimientos rotacionales más amplios o descontrolados. En el magnetómetro, los Sujetos 2 y 5 presentan mayores fluctuaciones en los ejes mag_y y mag_z, lo que podría estar relacionado con inestabilidad postural o colocación inadecuada del sensor.</p>
+</section>
+<section id="ejercicio-8-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">
+<h3>Ejercicio 8 - Distribución de los datos y Visualización de series de tiempo<a class="headerlink" href="#ejercicio-8-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfu1</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es1e8u1&#39;</span><span class="p">]</span>
+<span class="n">dfu2</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es2e8u1&#39;</span><span class="p">]</span>
+<span class="n">dfu3</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es3e8u1&#39;</span><span class="p">]</span>
+<span class="n">dfu4</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es4e8u1&#39;</span><span class="p">]</span>
+<span class="n">dfu5</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="s1">&#39;es5e8u1&#39;</span><span class="p">]</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Fila 1: acc</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Fila 2: gyr</span>
+    <span class="n">plot_density</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Fila 3: mag</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 8 - Unidad 1 (Templates) Histogramas de Densidad&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/10ac032f1ef97fd016d9f2b5613ee4fe1b0b235b07ae58b915028f205a64c3e6.png" src="_images/10ac032f1ef97fd016d9f2b5613ee4fe1b0b235b07ae58b915028f205a64c3e6.png" />
+</div>
+</div>
+<p>Los histogramas del acelerómetro (acc_x, acc_y, acc_z) muestran patrones consistentes entre los sujetos, con picos bien definidos y estrechos, lo que refleja movimientos controlados. Sin embargo, el Sujeto 2 presenta una mayor dispersión en acc_y, lo que podría estar asociado con variabilidad en movimientos laterales, y el Sujeto 4 evidencia dispersión en acc_z, posiblemente relacionada con mayor amplitud en movimientos verticales. En el giroscopio (gyr_x, gyr_y, gyr_z), las distribuciones son uniformes entre los sujetos, pero el Sujeto 3 muestra picos más amplios en gyr_z, lo que podría reflejar movimientos rotacionales menos controlados. El magnetómetro (mag_x, mag_y, mag_z) presenta mayor estabilidad en los Sujetos 1 y 5, mientras que los Sujetos 2 y 4 muestran dispersión más amplia en los ejes mag_y y mag_z, posiblemente asociada con inestabilidad postural o desalineación del sensor</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="n">data_frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">dfu1</span><span class="p">,</span> <span class="n">dfu2</span><span class="p">,</span> <span class="n">dfu3</span><span class="p">,</span> <span class="n">dfu4</span><span class="p">,</span> <span class="n">dfu5</span><span class="p">]</span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sujeto 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Sujeto 5&#39;</span><span class="p">]</span>
+
+<span class="c1"># Iterar sobre las unidades y los subgráficos</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">data_frames</span><span class="p">,</span> <span class="n">titles</span><span class="p">)):</span>
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  
+    <span class="n">plot_acceleration</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Ejercicio 8 - Unidad 1 Series de tiempo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.00</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/dbb3c49f707fcf51a47c2cbe86aba2f1b079d91d5fe3c5bd1e27aed940050296.png" src="_images/dbb3c49f707fcf51a47c2cbe86aba2f1b079d91d5fe3c5bd1e27aed940050296.png" />
+</div>
+</div>
+<p>En las series de tiempo, el acelerómetro muestra patrones repetitivos y consistentes en general, aunque el Sujeto 2 presenta mayores oscilaciones en acc_y, lo que podría reflejar técnica inconsistente en movimientos laterales. El Sujeto 4 tiene fluctuaciones más notables en acc_z, lo que podría estar relacionado con una mayor variabilidad en movimientos verticales. En el giroscopio, los Sujetos 3 y 5 presentan mayores picos en gyr_x y gyr_z, indicando movimientos rotacionales más amplios o menos controlados. Finalmente, el magnetómetro refleja patrones consistentes en los Sujetos 1 y 5, mientras que los Sujetos 2 y 4 presentan fluctuaciones en mag_y y mag_z, lo que podría estar relacionado con cambios posturales o colocación subóptima del sensor.</p>
+</section>
+<section id="conclusion-general">
+<h3>Conclusión general<a class="headerlink" href="#conclusion-general" title="Link to this heading">#</a></h3>
+<p>Tras evaluar los ocho ejercicios en la Unidad 1, considerando las mediciones de acelerómetro, giroscopio y magnetómetro, se observan patrones consistentes en general, pero con diferencias notables en ciertos ejercicios y sujetos. Los ejercicios que destacan positivamente en términos de consistencia y control son el Ejercicio 1 y el Ejercicio 6, donde las distribuciones son más estrechas y los patrones de las series de tiempo son más estables entre los sujetos. Esto sugiere que estos ejercicios son realizados con mayor control y precisión, reflejando movimientos repetitivos y técnica consistente.</p>
+<p>Por otro lado, el Ejercicio 3 y el Ejercicio 5 llaman la atención por presentar mayor variabilidad entre los sujetos, especialmente en las mediciones del magnetómetro y el giroscopio, lo que podría indicar movimientos más amplios o menos controlados.</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-de-distribucion-y-dispersion">
+<h1>Análisis de distribución y dispersión<a class="headerlink" href="#analisis-de-distribucion-y-dispersion" title="Link to this heading">#</a></h1>
+<p>Después de haber entendido las diferencias entre sujetos,  ahora pasar a comparar los sensores por unidades (acelerómetro, giroscopio y magnetómetro) dentro de un ejercicio específico. Con esto observaremos qué sensores capturan mejor la variabilidad o los movimientos más amplios dentro del ejercicio.</p>
+<p>Acelerómetro: Captura movimientos lineales (desplazamiento, impacto).
+Giroscopio: Detecta rotaciones (ángulos, torsiones).
+Magnetómetro: Identifica orientación o cambios posturales.</p>
+<p>Enriquece la perspectiva del ejercicio ya no se trata de cómo ejecutan los sujetos, sino de qué sensores capturan mejor las características del movimiento en el ejercicio.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">comparar_sensores</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">sujeto</span><span class="p">,</span> <span class="n">ejercicio</span><span class="p">,</span> <span class="n">unidad</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Genera boxplots comparando sensores (acelerómetro, giroscopio, magnetómetro) dentro de un ejercicio.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">sensores</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">,</span> <span class="s1">&#39;gyr&#39;</span><span class="p">,</span> <span class="s1">&#39;mag&#39;</span><span class="p">]</span>  <span class="c1"># Acelerómetro, Giroscopio, Magnetómetro</span>
+
+    <span class="k">for</span> <span class="n">sensor</span> <span class="ow">in</span> <span class="n">sensores</span><span class="p">:</span>
+        <span class="n">clave</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;ts</span><span class="si">{</span><span class="n">sujeto</span><span class="si">}</span><span class="s1">e</span><span class="si">{</span><span class="n">ejercicio</span><span class="si">}</span><span class="s1">u</span><span class="si">{</span><span class="n">unidad</span><span class="si">}</span><span class="s1">&#39;</span>  <span class="c1"># Clave para acceder al DataFrame</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">datos_entrenamiento</span><span class="p">[</span><span class="n">clave</span><span class="p">]</span>
+        
+        <span class="k">for</span> <span class="n">eje</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">]:</span>
+            <span class="n">columna</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">sensor</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">eje</span><span class="si">}</span><span class="s1">&#39;</span>
+            <span class="k">if</span> <span class="n">columna</span> <span class="ow">in</span> <span class="n">df</span><span class="p">:</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">extend</span><span class="p">([{</span><span class="s1">&#39;Sensor&#39;</span><span class="p">:</span> <span class="n">sensor</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">&#39;Eje&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">sensor</span><span class="si">}</span><span class="s1">_</span><span class="si">{</span><span class="n">eje</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;Valor&#39;</span><span class="p">:</span> <span class="n">val</span><span class="p">}</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="n">columna</span><span class="p">]])</span>
+
+    <span class="c1"># Crear un DataFrame consolidado para graficar</span>
+    <span class="n">df_boxplot</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># Generar el boxplot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_boxplot</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Eje&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Valor&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Sensor&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Comparación de Sensores por Ejes para el Ejercicio </span><span class="si">{</span><span class="n">ejercicio</span><span class="si">}</span><span class="s1"> - Sujeto </span><span class="si">{</span><span class="n">sujeto</span><span class="si">}</span><span class="s1">, Unidad </span><span class="si">{</span><span class="n">unidad</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ejes de los Sensores&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Valor&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Sensor&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="unidad-1">
+<h2>Unidad 1<a class="headerlink" href="#unidad-1" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comparar_sensores</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">sujeto</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ejercicio</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">unidad</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b8221707da138464fee6b108421f2495f95fd5d1be402ba500cb0d5427fc7adb.png" src="_images/b8221707da138464fee6b108421f2495f95fd5d1be402ba500cb0d5427fc7adb.png" />
+</div>
+</div>
+<p>El acelerómetro (ACC) muestra una mayor variabilidad en el eje y, con un rango claro de valores negativos y positivos. Esto indica que los movimientos lineales captados en este eje son más relevantes para el ejercicio. Los ejes x y z del acelerómetro son más estables, con valores más concentrados. El giroscopio (GYR) tiene valores concentrados alrededor de cero en todos los ejes, mostrando que las rotaciones no son significativas en esta unidad. Por último, el magnetómetro (MAG) presenta valores muy consistentes y rangos reducidos en los tres ejes, indicando estabilidad en los datos relacionados con la orientación.</p>
+</section>
+<section id="unidad-2">
+<h2>Unidad 2<a class="headerlink" href="#unidad-2" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comparar_sensores</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">sujeto</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ejercicio</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">unidad</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/2f35c0458a7158241d362423a9ba9217d52aa088c9e50dc3b4681641a7956ec3.png" src="_images/2f35c0458a7158241d362423a9ba9217d52aa088c9e50dc3b4681641a7956ec3.png" />
+</div>
+</div>
+<p>El eje y del acelerómetro muestra una dispersión mucho mayor en comparación con otras unidades, con valores positivos más altos, lo que sugiere movimientos lineales más amplios en esta unidad. Los ejes x y z del acelerómetro tienen valores más controlados, indicando menor participación en los movimientos. El giroscopio, al igual que en la Unidad 1, muestra distribuciones estrechas centradas cerca de cero, lo que sugiere que las rotaciones no son dominantes. El magnetómetro sigue mostrando valores muy consistentes, con rangos pequeños en todos los ejes, lo que refuerza su estabilidad.</p>
+</section>
+<section id="unidad-3">
+<h2>Unidad 3<a class="headerlink" href="#unidad-3" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comparar_sensores</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">sujeto</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ejercicio</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">unidad</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6965760c562e4f6dbc26fd7659cb61cd8609fb93d112c41ad28f775ebae6550c.png" src="_images/6965760c562e4f6dbc26fd7659cb61cd8609fb93d112c41ad28f775ebae6550c.png" />
+</div>
+</div>
+<p>Aquí, el acelerómetro nuevamente destaca en el eje y por mostrar variabilidad considerable, aunque menor que en la Unidad 2. Los ejes x y z permanecen más estables. El giroscopio continúa mostrando valores centrados alrededor de cero, confirmando que no hay rotaciones significativas en esta unidad. El magnetómetro, al igual que en las imágenes anteriores, mantiene valores constantes y rangos reducidos, indicando poca o ninguna variación en la orientación o el campo magnético durante el ejercicio.</p>
+</section>
+<section id="unidad-4">
+<h2>Unidad 4<a class="headerlink" href="#unidad-4" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comparar_sensores</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">sujeto</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ejercicio</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">unidad</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9d79e203bc3f94d9541b03c169a71ba562af644d20f96a54b2f81bddacd831f3.png" src="_images/9d79e203bc3f94d9541b03c169a71ba562af644d20f96a54b2f81bddacd831f3.png" />
+</div>
+</div>
+<p>En esta unidad, el acelerómetro muestra nuevamente al eje y como el más variable, aunque con una dispersión algo menor en comparación con la Unidad 2. Los ejes x y z mantienen valores estables. El giroscopio sigue mostrando distribuciones estrechas en todos los ejes, lo que confirma la falta de rotaciones significativas. El magnetómetro presenta una tendencia similar a las otras unidades, con rangos estrechos y valores consistentes en los tres ejes.</p>
+</section>
+<section id="unidad-5">
+<h2>Unidad 5<a class="headerlink" href="#unidad-5" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">comparar_sensores</span><span class="p">(</span><span class="n">datos_entrenamiento</span><span class="p">,</span> <span class="n">sujeto</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ejercicio</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">unidad</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d0ad345b578db7cdd7585487392dccff62891aa1290f865ddadcfda28bcf8703.png" src="_images/d0ad345b578db7cdd7585487392dccff62891aa1290f865ddadcfda28bcf8703.png" />
+</div>
+</div>
+<p>En esta última unidad, el acelerómetro presenta un patrón más similar al de la Unidad 3, con algo de variabilidad en el eje y, pero sin destacar tanto como en la Unidad 2. Los ejes x y z son nuevamente más estables. El giroscopio mantiene su patrón consistente de distribuciones concentradas cerca de cero, mientras que el magnetómetro sigue mostrando rangos pequeños y valores constantes en todos los ejes</p>
+<p>La Unidad 2 llama más la atención debido a la mayor dispersión en los valores del acelerómetro, especialmente en el eje y. Esto indica una mayor variabilidad en los movimientos lineales capturados por este sensor en comparación con las demás unidades. Los patrones más amplios observados en el acelerómetro de esta unidad contrastan con la estabilidad relativa de los otros sensores (giroscopio y magnetómetro), lo que refuerza su relevancia en este contexto.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Punto1_Modelos_Parcial3%20%281%29.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Modelamiento del Conjunto de Datos: Satisfacción de Clientes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="definitivo.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ejercicio de Fisioterapia: Modelos</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicios de Fisioterapia: EDA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#librerias">Librerias</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-datos">Cargar Datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-exploratorio">Análisis exploratorio</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-focalizado-por-unidad-1">Análisis focalizado por unidad 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 1 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 2 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 3 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 4 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 5 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-6-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 6 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-7-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 7 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-8-distribucion-de-los-datos-y-visualizacion-de-series-de-tiempo">Ejercicio 8 - Distribución de los datos y Visualización de series de tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-general">Conclusión general</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-distribucion-y-dispersion">Análisis de distribución y dispersión</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-1">Unidad 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-2">Unidad 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-3">Unidad 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-4">Unidad 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unidad-5">Unidad 5</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Henry Saenz y Kelly Beltran
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

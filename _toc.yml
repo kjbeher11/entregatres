@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Punto1EDA_Parcial3
+- file: Punto1_Modelos_Parcial3 (1)
+- file: segundo_punto
+- file: definitivo
